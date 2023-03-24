@@ -1,7 +1,6 @@
 package br.ce.rest.test;
 
 import br.ce.rest.core.Base;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static br.ce.rest.utils.Utils.*;

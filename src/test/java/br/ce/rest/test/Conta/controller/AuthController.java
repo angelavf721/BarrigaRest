@@ -1,4 +1,5 @@
-package br.ce.rest.test;
+package br.ce.rest.test.Conta.controller;
+
 
 import br.ce.rest.core.Base;
 import io.restassured.RestAssured;
@@ -7,7 +8,7 @@ import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class Auth extends Base {
+public class AuthController extends Base {
 
     @Test
     public void acessarAPIsemTOKEN(){

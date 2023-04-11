@@ -1,4 +1,5 @@
-package br.ce.rest.test;
+package br.ce.rest.test.Movimentacao.controller;
+
 
 import br.ce.rest.core.Base;
 import org.junit.Test;
@@ -7,7 +8,7 @@ import static br.ce.rest.utils.Utils.getConta;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
 
-public class Saldo extends Base {
+public class SaldoController extends Base {
 
     @Test
     public void valorSaldo(){

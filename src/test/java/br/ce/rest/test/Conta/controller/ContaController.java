@@ -1,4 +1,5 @@
-package br.ce.rest.test;
+package br.ce.rest.test.Conta.controller;
+
 
 import br.ce.rest.core.Base;
 import br.ce.rest.utils.Utils;
@@ -10,7 +11,7 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class Conta extends Base {
+public class ContaController extends Base {
     @Test
     public void t01_inserirConta(){
         given()

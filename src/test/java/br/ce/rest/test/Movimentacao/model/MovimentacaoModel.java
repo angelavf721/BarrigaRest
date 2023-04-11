@@ -1,6 +1,6 @@
-package br.ce.rest.test;
+package br.ce.rest.test.Movimentacao.model;
 
-public class MovimentacaoClass {
+public class MovimentacaoModel {
 
     private Integer id;
     private String descricao;

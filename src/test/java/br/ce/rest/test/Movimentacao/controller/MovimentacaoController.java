@@ -1,6 +1,8 @@
-package br.ce.rest.test;
+package br.ce.rest.test.Movimentacao.controller;
+
 
 import br.ce.rest.core.Base;
+import br.ce.rest.test.Movimentacao.model.MovimentacaoModel;
 import org.junit.Test;
 
 import static br.ce.rest.utils.Utils.*;
@@ -8,11 +10,11 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.Matchers.hasSize;
 
-public class MovimentacaoTest extends Base {
+public class MovimentacaoController extends Base {
 
     @Test
     public void criarMovimentacaoComSucesso(){
-        MovimentacaoClass movi = getMovimentacao();
+        MovimentacaoModel movi = getMovimentacao();
         given()
             .body(movi)
         .when()
@@ -37,7 +39,7 @@ public class MovimentacaoTest extends Base {
     }
     @Test
     public void dataMovimentacaoFutura(){
-        MovimentacaoClass movi = getMovimentacao();
+        MovimentacaoModel movi = getMovimentacao();
         movi.setData_transacao(dataDiferencaDias(5));
         given()
             .body(movi)
@@ -73,8 +75,8 @@ public class MovimentacaoTest extends Base {
 
 
 
-    public MovimentacaoClass getMovimentacao(){
-        MovimentacaoClass movi = new MovimentacaoClass();
+    public MovimentacaoModel getMovimentacao(){
+        MovimentacaoModel movi = new MovimentacaoModel();
         movi.setConta_id(getConta("Conta para movimentacoes"));
         movi.setDescricao("Sou a desc, prazer");
         movi.setEnvolvido("Envolvido da desc");
